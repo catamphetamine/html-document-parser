@@ -1,0 +1,46 @@
+{
+  "name": "html-document-parser",
+  "version": "1.1.1",
+  "description": "HTML markup parser in a web browser and in Node.js",
+  "type": "module",
+  "exports": {
+    ".": {
+      "node": "./document/node.js",
+      "default": "./document/browser.js"
+    },
+    "./snippet": {
+      "node": "./snippet/node.js",
+      "default": "./snippet/browser.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@xmldom/xmldom": "^0.8.6"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "npm-run-all": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"no tests\"",
+    "build": "echo \"no build script\"",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/catamphetamine/html-document-parser.git"
+  },
+  "keywords": [
+    "DOM",
+    "html",
+    "parser"
+  ],
+  "author": "catamphetamine <purecatamphetamine@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/catamphetamine/html-document-parser/issues"
+  },
+  "homepage": "https://gitlab.com/catamphetamine/html-document-parser#readme"
+}
